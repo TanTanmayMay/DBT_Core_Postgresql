@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: category_model
+
+tests:
+  - name: unique_category_ids
+    description: "Ensure that category_id is unique in the category_model"
+    assert:
+      unique:
+        - category_id
